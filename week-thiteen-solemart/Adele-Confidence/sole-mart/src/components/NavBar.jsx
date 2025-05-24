@@ -1,3 +1,4 @@
+import {FaCartShopping, FaRegHeart, FaMagnifyingGlass} from "react-icons/fa6";
 
 const NavBar = () => {
 
@@ -9,7 +10,7 @@ const NavBar = () => {
     ];
 
     return (
-        <nav className="py-6 flex justify-between items-center">
+        <nav className="py-6 flex justify-between items-center mb-10">
             <div>
                 <img src="/logo.png" alt="" />
             </div>
@@ -23,16 +24,16 @@ const NavBar = () => {
             <div className="flex gap-5">
 
                 <div className='bg-gray-300 relative w-full max-w-sm'>
-                    <span className="absolute inset-y-0 right-0 pl-4 flex items-center">
-                        <img src="/Google-Search.png" alt="search icon"/>
+                    <span className="absolute inset-y-0 right-3 pl-4 flex items-center">
+                        <FaMagnifyingGlass className="size-5"/>
                     </span>
                     <input type="text" placeholder="What are you looking for?" className="pr-10 pl-4 pt-1 boreder rounded w-full"/>
                     
             
                 </div>
 
-                <img src="/Love-icon.png" alt="Love icon"/>
-                <img src="/Cart.png" alt="Cart icon"/>
+                <FaRegHeart className="size-7"/>
+                <FaCartShopping className="size-7"/>
                 
                 
             </div>
